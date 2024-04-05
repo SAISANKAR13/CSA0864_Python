@@ -1,11 +1,7 @@
-n=int(input("enter no of digits: "))
-a=0
-b=1
-nextnumber=b
-count=1
-while count<=n:
-    print(nextnumber, end=" ")
+n = int(input("Enter the number of Fibonacci numbers to print: "))
+a, b = 0, 1
+count = 0
+while count < n:
+    print(a, end=" ")
+    a, b = b, a + b
     count += 1
-    a,b =b, nextnumber
-    nextnumber=a+b
-print()
